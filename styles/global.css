@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    position: relative;
+}
+
+.header-logo{
+    height: 100px;
+}
+
+.header-icon{
+    color: black;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.header-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.header-icon-menu{
+    font-size: 2em;
+}
+
+.header-nav{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+#checkboxMenu:checked + .header-nav{
+    display: block;
+}
+
+.header-nav ul{
+    list-style: none;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.header-nav ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.header-nav ul li{
+    transition: 0.3s;
+}
+
+.header-nav ul li:hover{
+    transform: scale(1.1);
+}
+
+.alert{
+    background-color: rgb(205, 205, 3);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
