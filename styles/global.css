@@ -27,6 +27,7 @@ header{
 .header-icon:hover{
     transform: scale(1.1);
     cursor: pointer;
+    color: rgb(96, 96, 96);
 }
 
 .header-icon-menu{
