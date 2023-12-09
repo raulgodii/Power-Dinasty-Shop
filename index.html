@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/8fd2dbd2a5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script/script.js"></script>
 </head>
-<body>
+<body id="app">
     <div class="alert">
         <p>🎄 HOLIDAY SHIPPING: Orders from Dec 14 onward, choose FEDEX CONNECT PLUS or DHL for timely delivery. 🎄</p>
     </div>
-    <header>        
+    <header v-model="header">        
         <div>
             <label for="checkboxMenu">
                 <i class="header-icon header-icon-menu fa-solid fa-bars"></i>
@@ -24,7 +26,7 @@
 
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Prueba</a></li>
+                    <li><a href="belts.html">Belts</a></li>
                     <li><a href="#">Prueba</a></li>
                     <li><a href="#">Prueba</a></li>
                     <li><a href="#">Prueba</a></li>
@@ -38,8 +40,8 @@
 
         <div>
             <i class="header-icon fa-solid fa-magnifying-glass"></i>
-            <a href=""><i class="header-icon fa-solid fa-cart-shopping"></i></a>
-            <a href=""><i class="header-icon fa-solid fa-user"></i></a>
+            <a href="cart.html"><i class="header-icon fa-solid fa-cart-shopping"></i></a>
+            <a href="identify.html"><i class="header-icon fa-solid fa-user"></i></a>
         </div>
     </header>
     <main>
