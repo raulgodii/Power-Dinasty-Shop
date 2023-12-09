@@ -6,55 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/8fd2dbd2a5.js" crossorigin="anonymous"></script>
-    <style>
-
-
-        .gallery {
-        background: #EEE;
-        }
-
-        .gallery-cell {
-            width: 66%;
-            height: 200px;
-            margin-right: 10px;
-            background: #8C8;
-            background-size: cover;
-            background-position: center;
-            counter-increment: gallery-cell;
-        }
-
-        .gallery-cell:before {
-            display: block;
-            text-align: center;
-            line-height: 200px;
-            font-size: 80px;
-            color: white;
-        }
-
-        .c1:before {
-            content: "tusmu";
-            background-color: black;
-            opacity: 0.5;
-        }
-
-        .c2:before {
-            content: "tusmu";
-        }
-
-        .c3:before {
-            content: "tusmu";
-        }
-
-        .c4:before {
-            content: "tusmu";
-        }
-
-        .c5:before {
-            content: "tusmu";
-        }
-
-    </style>
 </head>
 <body>
     <div class="alert">
@@ -88,14 +42,18 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="slider">
             <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell c1" style="background-image: url(assets/carrusel1.jpg);"></div>
-                <div class="gallery-cell c2" style="background-image: url(assets/carrusel2.jpeg);"></div>
-                <div class="gallery-cell c3" style="background-image: url(assets/carrusel3.jpeg);"></div>
-                <div class="gallery-cell c4" style="background-image: url(assets/carrusel4.jpg);"></div>
-                <div class="gallery-cell c5" style="background-image: url(assets/carrusel5.jpg);"></div>
+                <div class="gallery-cell c1" style="background-image: url(assets/1.png);"></div>
+                <div class="gallery-cell c2" style="background-image: url(assets/2.png);"></div>
+                <div class="gallery-cell c3" style="background-image: url(assets/3.png);"></div>
+                <div class="gallery-cell c4" style="background-image: url(assets/4.png);"></div>
+                <div class="gallery-cell c5" style="background-image: url(assets/5.png);"></div>
             </div>
+        </section>
+
+        <section class="banner">
+            <img src="assets/banner.png" alt="banner">
         </section>
     </main>
 
