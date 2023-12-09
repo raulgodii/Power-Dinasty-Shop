@@ -11,26 +11,27 @@
     display: block;
     text-align: center;
     line-height: 200px;
-    font-size: 3em;
     color: white;
+    font-family: Dela Gothic One;
+    text-transform: uppercase;
 }
 
 .c1:before {
-    content: "Power Up Your Gains";
+    content: "\"Power Up Your Gains\"";
 }
 
 .c2:before {
-    content: "Stronger Every Set";
+    content: "\"Stronger Every Set\"";
 }
 
 .c3:before {
-    content: "Conquer the Barbell";
+    content: "\"Conquer the Barbell\"";
 }
 
 .c4:before {
-    content: "Lift Heavy, Lift Smart";
+    content: "\"Lift Heavy, Lift Smart\"";
 }
 
 .c5:before {
-    content: "Equip for Power";
+    content: "\"Equip for Power\"";
 }
