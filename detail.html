@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/detail.css">
     <script src="https://kit.fontawesome.com/8fd2dbd2a5.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="script/script.js"></script>
+    
 </head>
 <body id="app">
     <header v-model="header">        
@@ -42,9 +42,61 @@
     </header>
 
     <main>
-        <section class="detail">
-            
+        <section class="detail" id="app">
+            <div class="detail-p1">
+                <img class="img-principal" :src="img" alt="">
+                <div class="p1-secondary">
+                    <img class="img-secondary" src="assets/products/7.png" @click="img='assets/products/7.png'" alt="">
+                    <img class="img-secondary" src="assets/products/9.png" @click="img='assets/products/9.png'" alt="">
+                    <img class="img-secondary" src="assets/products/10.png" @click="img='assets/products/10.png'" alt="">
+                    <img class="img-secondary" src="assets/products/11.png" @click="img='assets/products/11.png'" alt="">
+                    <img class="img-secondary" src="assets/products/12.png" @click="img='assets/products/12.png'" alt="">
+                </div>
+            </div>
+
+            <div class="detail-p2">
+                <h4>ErgoPro Knee Sleeves</h4>
+                <p><strong>The finest, most advanced Powerlifting Knee Sleeves in the world.</strong></p>
+                <ul>
+                    <li>Perfectly balanced for Stability, Comfort, and SAFETY for powerlifting competition</li>
+                    <li>Ergonomically designed to stay in place, Self Adjusting</li>
+                    <li>The Ultra-Best for powerlifting</li>
+                    <li>7mm thick, nearly indestructible construction</li>
+                    <li>Manufactured in Texas, USA; Approved worldwide for Powerlifting</li>
+                </ul>
+                <p class="detail-p1-price">134.99€</p>
+                <label for="size">Select size:</label>
+                <select name="size" id="size">
+                    <option value="xs">XS</option>
+                    <option value="xs">S</option>
+                    <option value="xs">M</option>
+                    <option value="xs">L</option>
+                    <option value="xs">XL</option>
+                    <option value="xs">XXL</option>
+                </select>
+                <button>Add to the cart</button>
+            </div>
+           
         </section>
+        <script>
+            const { createApp } = Vue
+    
+            createApp({
+            data() {
+                return {
+                    img: 'assets/products/7.png',
+                }
+            },
+    
+            methods: {
+                
+            },    
+    
+            computed:{
+            }
+        
+            }).mount('#app')
+        </script>
     </main>
 
     <footer>
