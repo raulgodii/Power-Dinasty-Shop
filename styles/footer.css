@@ -55,3 +55,36 @@ footer h4{
 .footer-payments-icons i{
     margin: 0 5px;
 }
+
+@media only screen and (max-width: 850px) {
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-item{
+        margin: 20px 5px;
+    }
+
+    .footer-item, .footer-payments{
+        font-size: 0.8em;
+    }
+
+    .footer-cta{
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item{
+        text-align: center;
+    }
+
+    .footer-cta{
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -45,6 +45,7 @@
 .followUs-content-icons{
     width: 100%;
     text-align: center;
+    margin: 10px;
 }
 
 .followUs-content-icons i{
@@ -148,4 +149,20 @@
 
 .newsletter{
     margin: 50px 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .followUsContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+    }
 }
